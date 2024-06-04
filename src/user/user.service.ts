@@ -9,25 +9,6 @@ import {
 } from './entities/user.entity';
 import { ImgData } from './entities/avatar.entity';
 
-/* Valutar si calbiar de select! 
-const selectCreateDto = {
-  name: true,
-  id: true,
-  email: true,
-  role: true,
-  birthday: true,
-  avatar: {
-    select: {
-      publicId: true,
-      secureUrl: true,
-      width: true,
-      height: true,
-      format: true,
-      originalName: true,
-    },
-  },
-}; */
-
 export const select = {
   name: true,
   id: true,
