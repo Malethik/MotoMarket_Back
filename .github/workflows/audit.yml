@@ -28,6 +28,12 @@ jobs:
       - name: Install modules
         run: npm ci
 
+      - name: Fix line endings
+        run: node /home/runner/work/_actions/snow-actions/eclint/v1.0.1/node_modules/eclint/bin/eclint.js fix
+
+      - name: Check line endings
+        run: node /home/runner/work/_actions/snow-actions/eclint/v1.0.1/node_modules/eclint/bin/eclint.js check
+
       - name: ESLint validation
         run: npx eslint --ignore-path .gitignore
 
