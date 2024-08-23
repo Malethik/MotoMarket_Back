@@ -8,6 +8,7 @@ import { ConfigModule } from '@nestjs/config';
 import { ItemModule } from './item/item.module';
 import { ImageModule } from './image/image.module';
 import { PaymentModule } from './payment/payment.module';
+import { EmailModule } from './email/email.module';
 
 @Module({
   imports: [
@@ -20,6 +21,7 @@ import { PaymentModule } from './payment/payment.module';
     ItemModule,
     ImageModule,
     PaymentModule,
+    EmailModule,
   ],
   controllers: [AppController],
   providers: [AppService],
